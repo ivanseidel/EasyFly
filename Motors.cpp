@@ -12,6 +12,11 @@ void Motors::init(){
 		pinMode(MOTOR_PINS[i], OUTPUT);
 	}
 
+	// Increase PWM frequency
+	// TCCR0B = TCCR0B & B11111000 | B00000001; // D5 & D6
+	TCCR1B = TCCR1B & B11111000 | B00000001; // D9 & D10
+	TCCR2B = TCCR2B & B11111000 | B00000001; // D3 & D11
+
 	// Stop motors
 	Motors::stop();
 }
