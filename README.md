@@ -1,6 +1,8 @@
 # EasyFly
 #### (Another drone Firmware)
 
+![EasyFly micro-hexa](https://raw.githubusercontent.com/ivanseidel/EasyFly/master/assets/drone.jpg)
+
 This is a simple Drone Firmware developed in a Livecoding. It should work
 fine for any normal drone that doesn't use brushless motors or changes
 it form during flight.
