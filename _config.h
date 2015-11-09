@@ -65,7 +65,7 @@
 // Motors
 // 
 #define MOTOR_PW_MAX					255
-#define MOTOR_PW_MIN					20
+#define MOTOR_PW_MIN					30
 
 #define MOTOR_PIN_1 					9
 #define MOTOR_PIN_2 					6
