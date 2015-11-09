@@ -61,6 +61,7 @@ bool IMU::init(){
 		return false;
 	}
 
+	dmpEnabled = false;
 	return true;
 }
 

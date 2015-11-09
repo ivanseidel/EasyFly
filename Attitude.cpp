@@ -19,6 +19,7 @@ void Attitude::init(){
 	// Init IMU
 	imu = new IMU();
 	imu->init();
+	imu->enabled = true;
 	imu->setInterval(5);
 
 
