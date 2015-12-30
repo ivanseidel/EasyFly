@@ -90,7 +90,7 @@ void threadStabilizer_callback(){
 	}
 
 	// Check if dt is good to go
-	if(dt <= 0.0 && dt >= 0.2){
+	if(dt <= 0.0 || dt >= 0.2){
 		LOG("$ dt too high! "); LOG(dt); LOG("\n");
 		return;
 	}
