@@ -16,9 +16,9 @@ Thread threadCheckFall;
 Thread threadStabilizer;
 
 
-// 
+//
 // PID Setup
-// 
+//
 PID pidYaw(1, 0, 0, 100);
 PID pidRoll(1, 0, 0, 100);
 PID pidPitch(1, 0, 0, 100);
@@ -37,7 +37,7 @@ void Stabilizer::init(){
 		Drone::props[i][PROP_X_W] = abs(Drone::props[i][PROP_X]) / sum[PROP_X];
 		Drone::props[i][PROP_Y_W] = abs(Drone::props[i][PROP_Y]) / sum[PROP_Y];
 
-		// LOG(" = ");  LOG(i+1); 
+		// LOG(" = ");  LOG(i+1);
 		// LOG(" ["); LOG(Drone::props[i][2]);
 		// LOG(", "); LOG(Drone::props[i][3]);LOG("]\n");
 	};
@@ -57,9 +57,9 @@ void Stabilizer::init(){
 }
 
 
-// 
+//
 // Checks if drone has inclinated too much
-// 
+//
 void threadCheckFall_callback(){
 	if(Drone::state != ARMED)
 		return;
